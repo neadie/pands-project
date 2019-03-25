@@ -21,6 +21,14 @@ Separate out a validation dataset.
 Set-up the test harness to use 10-fold cross validation.
 Build 5 different models to predict species from flower measurements
 Select the best model.
+
+### Make Predictions
+The KNN algorithm is very simple and was an accurate model based on the tests. Now we want to get an idea of the accuracy of the model on our validation set.
+
+This will give us an independent final check on the accuracy of the best model. It is valuable to keep a validation set just in case you made a slip during training, such as overfitting to the training set or a data leak. Both will result in an overly optimistic result.
+
+We can run the KNN model directly on the validation set and summarize the results as a final accuracy score, a confusion matrix and a classification report
+
 ## References 
 1. Scikit-Learn , The Iris Dataset,https,<https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html>
 2. Curran Kelleher,The Iris Dataset, https://gist.github.com/curran/a08a1080b88344b0c8a7
