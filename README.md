@@ -1,0 +1,28 @@
+# Programing and Scripting Project
+
+## The Iris Dataset
+The data set consists of 150 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). ref(1)
+
+The dataset contains five attributes - petal length, petal width, sepal length, sepal width and species.
+
+## Preparation
+
+There were 5 key libraries installed. Below is a list of the Python SciPy libraries required for this tutorial:
+
+- scipy
+- numpy
+- matplotlib
+- pandas
+- sklearn ref (3)
+
+### Evaluate  Algorithms
+To create some models of the data and estimate their accuracy on unseen data.
+Separate out a validation dataset.
+Set-up the test harness to use 10-fold cross validation.
+Build 5 different models to predict species from flower measurements
+Select the best model.
+## References 
+1. Scikit-Learn , The Iris Dataset,https,<https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html>
+2. Curran Kelleher,The Iris Dataset, https://gist.github.com/curran/a08a1080b88344b0c8a7
+3. Jason Brownlee on June 10, 2016 in Python Machine Learning,Your First Machine Learning Project in Python Step-By-Step, <https://machinelearningmastery.com/machine-learning-in-python-step-by-step/>
+4. Scikit-learn Classifiers on Iris Dataset <https://www.kaggle.com/chungyehwang/scikit-learn-classifiers-on-iris-dataset>
