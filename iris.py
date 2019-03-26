@@ -13,7 +13,7 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 from urllib import urlretrieve
-
+import seaborn as sns
 #  Load Dataset
 iris = 'http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'
 
@@ -88,4 +88,54 @@ fig.suptitle('Algorithm Comparison')
 ax = fig.add_subplot(111)
 plt.boxplot(results)
 ax.set_xticklabels(names)
+plt.show()
+
+
+
+# Make predictions on validation dataset
+knn = KNeighborsClassifier()
+# Fit the classifier to the data
+knn.fit(X_train, Y_train)
+# Predict the labels of the training data
+predictions = knn.predict(X_train)
+print("Prediction: {}".format(predictions))
+print(accuracy_score(Y_validation, predictions))
+print(confusion_matrix(Y_validation, predictions))
+print(classification_report(Y_validation, predictions))
+
+
+
+# example of training a final classification model
+# generate 2d classification dataset
+# fit final model
+model = LogisticRegression()
+model.fit(X, Y)
+
+
+## Exploratory data analysis
+
+
+## I be working with the iris dataset. My goal was  
+## be to predict species('Iris-versicolor','Iris-virginica','Iris-setosa') based on "sepal_length", "sepal_width", "petal_length", "petal_width"
+
+
+plt.figure()
+sns.countplot(x='sepal_length', hue='class', data=df, palette='RdBu')
+plt.xticks([0,1,2], ['Iris-versicolor','Iris-virginica','Iris-setosa'])
+plt.show()
+
+plt.figure()
+sns.countplot(x='sepal_width', hue='class', data=df, palette='RdBu')
+plt.xticks([0,1,2], ['Iris-versicolor','Iris-virginica','Iris-setosa'])
+plt.show()
+
+
+plt.figure()
+sns.countplot(x='petal_length', hue='class', data=df, palette='RdBu')
+plt.xticks([0,1,2], ['Iris-versicolor','Iris-virginica','Iris-setosa'])
+plt.show()
+
+plt.figure()
+sns.countplot(x='petal_width', hue='class', data=df, palette='RdBu')
+plt.xticks([0,1,2], ['Iris-versicolor','Iris-virginica','Iris-setosa'])
 plt.show()
