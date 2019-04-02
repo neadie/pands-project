@@ -12,13 +12,14 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
-from urllib import urlretrieve
 import seaborn as sns
+import urllib.request
+
 #  Load Dataset
 iris = 'http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'
 
-urlretrieve(iris)
-df = pd.read_csv(iris, sep=',')
+data = urllib.request.urlopen(iris)
+df = pd.read_csv(data, sep=',')
 attributes = ["sepal_length", "sepal_width", "petal_length", "petal_width", "class"]
 df.columns = attributes
 # Shape
@@ -49,6 +50,7 @@ plt.show()
 
 # scatter plot matrix
 scatter_matrix(df)
+plt.savefig('scatter_matrix.png') 
 plt.show()
 
 
