@@ -27,7 +27,58 @@ mean of each column of the data set. A Python script will quickly do this for yo
 ## Summary of  Investigations.
  Include supporting tables and graphics as you deem necessary.
 
+```python
+# Load libraries
+import pandas as pd
+from pandas.plotting import scatter_matrix
+import matplotlib.pyplot as plt
+from sklearn import model_selection
+from sklearn.metrics import classification_report
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import accuracy_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+from sklearn.naive_bayes import GaussianNB
+from sklearn.svm import SVC
+from urllib import urlretrieve
+import seaborn as sns
+#  Load Dataset
+iris = 'http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'
 
+urlretrieve(iris)
+df = pd.read_csv(iris, sep=',')
+attributes = ["sepal_length", "sepal_width", "petal_length", "petal_width", "class"]
+df.columns = attributes
+# Shape
+print(df.shape)
+
+
+# peak at the Data
+print(df.head(20))
+
+
+# Summary stattistics
+
+print(df.describe())
+
+print(df.groupby('class').size())
+
+# box and whisker plots
+df.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+plt.show()
+
+# histograms
+df.hist()
+plt.show()
+
+
+
+# scatter plot matrix
+scatter_matrix(df)
+plt.show()
+```
 
 ### Evaluate  Algorithms
 To create some models of the data and estimate their accuracy on unseen data.
