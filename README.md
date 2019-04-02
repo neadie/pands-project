@@ -44,7 +44,7 @@ The describe() is used to view some basic statistical details like percentile, m
 ![output from describe on iris data set ](irisStats.PNG)
 
 
-####Class Distribution
+#### Class Distribution
 Let’s now take a look at the number of instances (rows) that belong to each class. We can view this as an absolute count.
 ![Class Distribtion ](irisClass.PNG)
 
