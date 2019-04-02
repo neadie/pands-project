@@ -39,10 +39,11 @@ print(df.describe())
 Pandas describe() is used to view some basic statistical details like percentile, mean, std etc. of a data frame or a series of numeric values. When this method is applied to a series of string, it returns a different output which is shown in the examples below.
 
 
-2.  Summarise the data set by, for example, calculating the maximum, minimum and
-mean of each column of the data set. A Python script will quickly do this for you.
 
+#### Box and whisker plots
 
+Inline-style: 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 ## Summary of  Investigations.
  Include supporting tables and graphics as you deem necessary.
 
