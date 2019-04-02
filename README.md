@@ -44,7 +44,7 @@ The describe() is used to view some basic statistical details like percentile, m
 ![output from describe on iris data set ](irisStats.PNG)
 
 
-####Class Distribution
+#### Class Distribution
 Let’s now take a look at the number of instances (rows) that belong to each class. We can view this as an absolute count.
 ![Class Distribtion ](irisClass.PNG)
 
@@ -57,7 +57,7 @@ We are going to look at two types of plots:
 Univariate plots to better understand each attribute.
 Multivariate plots to better understand the relationships between attributes.
 
-#### Univariate Plots
+### Univariate Plots
 We start with some univariate plots, that is, plots of each individual variable.
 
 Given that the input variables are numeric, we can create box and whisker plots of each
@@ -74,6 +74,13 @@ Given that the input variables are numeric, we can create box and whisker plots 
 A histogram of each input variable to get an idea of the distribution.
 
 ![histrogram](histrogram.png)
+
+
+### Multivariate Plots
+
+#### Scatterplots matrix
+![Scatter plot marix](scatter_matrix.png)
+
 
 ## Summary of  Investigations.
  Include supporting tables and graphics as you deem necessary.
