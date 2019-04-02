@@ -1,6 +1,6 @@
 # Programing and Scripting Project
 
-##Research
+## Research
 ### Background information about the Iris Dataset
 The data set consists of 150 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). ref(1)
 
@@ -8,24 +8,24 @@ The dataset contains five attributes - petal length, petal width, sepal length, 
 
 ## Preparation
 
-There were 5 key libraries installed. Below is a list of the Python SciPy libraries required for this tutorial:
+There were 5 key libraries installed. Below is a list of the Python SciPy libraries required for this project:
 
 - scipy
 - numpy
 - matplotlib
 - pandas
-- sklearn ref (3)
+- sklearn 
 
 
 
 ## Investigation
-3. Download the data set and write some Python code to investigate it.
-4. Summarise the data set by, for example, calculating the maximum, minimum and
+1.  Download the data set and write some Python code to investigate it.
+2.  Summarise the data set by, for example, calculating the maximum, minimum and
 mean of each column of the data set. A Python script will quickly do this for you.
 
 
 ## Summary of  Investigations.
-6. Include supporting tables and graphics as you deem necessary.
+ Include supporting tables and graphics as you deem necessary.
 
 
 
