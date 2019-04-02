@@ -30,6 +30,15 @@ prints out (149,5) 149 rows and 5 columns
 print(df.head(20))
 ```
 prints out the first twenty rows 
+
+
+# Summary stattistics
+```python
+print(df.describe())
+```
+Pandas describe() is used to view some basic statistical details like percentile, mean, std etc. of a data frame or a series of numeric values. When this method is applied to a series of string, it returns a different output which is shown in the examples below.
+
+
 2.  Summarise the data set by, for example, calculating the maximum, minimum and
 mean of each column of the data set. A Python script will quickly do this for you.
 
@@ -59,3 +68,4 @@ We can run the KNN model directly on the validation set and summarize the result
 3. Jason Brownlee on June 10, 2016 in Python Machine Learning,Your First Machine Learning Project in Python Step-By-Step, <https://machinelearningmastery.com/machine-learning-in-python-step-by-step/>
 4. Scikit-learn Classifiers on Iris Dataset <https://www.kaggle.com/chungyehwang/scikit-learn-classifiers-on-iris-dataset>
 5. Ritchie Ng,Evaluating a Classification Model <https://www.ritchieng.com/machine-learning-evaluate-classification-model/>
+6. geeksforgeeks,Python | Pandas Dataframe.describe() method ,<https://www.geeksforgeeks.org/python-pandas-dataframe-describe-method/>
