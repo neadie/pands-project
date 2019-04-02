@@ -37,10 +37,12 @@ print(df.groupby('class').size())
 
 # box and whisker plots
 df.plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+plt.savefig('boxplot.png') 
 plt.show()
 
 # histograms
 df.hist()
+plt.savefig('histrogram.png') 
 plt.show()
 
 

@@ -21,12 +21,14 @@ There were 5 key libraries installed. Below is a list of the Python SciPy librar
 ## Investigation
 1.  
 ```python
-# Shape
+
 print(df.shape)
+
 ```
 prints out (149,5) 149 rows and 5 columns 
-```python
+
 # peak at the Data
+```python
 print(df.head(20))
 ```
 prints out the first twenty rows 
@@ -36,14 +38,43 @@ prints out the first twenty rows
 ```python
 print(df.describe())
 ```
-Pandas describe() is used to view some basic statistical details like percentile, mean, std etc. of a data frame or a series of numeric values. When this method is applied to a series of string, it returns a different output which is shown in the examples below.
 
+The describe() is used to view some basic statistical details like percentile, mean, std etc. of a data frame or a series of numeric values.
+
+![output from describe on iris data set ](irisStats.PNG)
+
+
+####Class Distribution
+Let’s now take a look at the number of instances (rows) that belong to each class. We can view this as an absolute count.
+![Class Distribtion ](irisClass.PNG)
+
+### Data Visualization
+
+We now have a basic idea about the data. We need to extend that with some visualizations.
+
+We are going to look at two types of plots:
+
+Univariate plots to better understand each attribute.
+Multivariate plots to better understand the relationships between attributes.
+
+#### Univariate Plots
+We start with some univariate plots, that is, plots of each individual variable.
+
+Given that the input variables are numeric, we can create box and whisker plots of each
 
 
 #### Box and whisker plots
 
-Inline-style: 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+
+![Box Plot](boxplot.png)
+
+
+
+#### histrogram
+A histogram of each input variable to get an idea of the distribution.
+
+![histrogram](histrogram.png)
+
 ## Summary of  Investigations.
  Include supporting tables and graphics as you deem necessary.
 
