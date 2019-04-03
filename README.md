@@ -19,7 +19,7 @@ There were 5 key libraries installed. Below is a list of the Python SciPy librar
 
 
 ## Investigation
-1.  
+ 
 ```python
 
 print(df.shape)
@@ -27,14 +27,15 @@ print(df.shape)
 ```
 prints out (149,5) 149 rows and 5 columns 
 
-# peak at the Data
+####  Peak at the Data
+
 ```python
 print(df.head(20))
 ```
 prints out the first twenty rows 
 
 
-# Summary stattistics
+### Summary stattistics
 ```python
 print(df.describe())
 ```
@@ -57,28 +58,28 @@ We are going to look at two types of plots:
 Univariate plots to better understand each attribute.
 Multivariate plots to better understand the relationships between attributes.
 
-### Univariate Plots
+#### Univariate Plots
 We start with some univariate plots, that is, plots of each individual variable.
 
 Given that the input variables are numeric, we can create box and whisker plots of each
 
 
-#### Box and whisker plots
+##### Box and whisker plots
 
 
 ![Box Plot](boxplot.png)
 
 
 
-#### histrogram
+##### histrogram
 A histogram of each input variable to get an idea of the distribution.
 
 ![histrogram](histrogram.png)
 
 
-### Multivariate Plots
+####  Multivariate Plots
 
-#### Scatterplots matrix
+##### Scatterplots matrix
 ![Scatter plot marix](scatter_matrix.png)
 
 
