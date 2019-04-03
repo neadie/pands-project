@@ -83,17 +83,27 @@ A histogram of each input variable to get an idea of the distribution.
 ![Scatter plot marix](scatter_matrix.png)
 
 
+
+
+
 ## Summary of  Investigations.
  Include supporting tables and graphics as you deem necessary.
 
 
 
 ### Evaluate  Algorithms
-To create some models of the data and estimate their accuracy on unseen data.
-Separate out a validation dataset.
-Set-up the test harness to use 10-fold cross validation.
-Build 5 different models to predict species from flower measurements
-Select the best model.
+
+
+Split dataset into random train and test subsets
+```python
+array = df.values
+X = array[:,0:4]
+Y = array[:,4]
+validation_size = 0.20
+seed = 7
+scoring = 'accuracy'
+X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed)
+```
 
 ### Make Predictions
 The KNN algorithm is very simple and was an accurate model based on the tests. Now we want to get an idea of the accuracy of the model on our validation set.
