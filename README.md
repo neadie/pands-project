@@ -19,7 +19,7 @@ There were 5 key libraries installed. Below is a list of the Python SciPy librar
 
 
 ## Investigation
-1.  
+ 
 ```python
 
 print(df.shape)
@@ -27,14 +27,15 @@ print(df.shape)
 ```
 prints out (149,5) 149 rows and 5 columns 
 
-# peak at the Data
+####  Peak at the Data
+
 ```python
 print(df.head(20))
 ```
 prints out the first twenty rows 
 
 
-# Summary stattistics
+### Summary stattistics
 ```python
 print(df.describe())
 ```
@@ -57,29 +58,32 @@ We are going to look at two types of plots:
 Univariate plots to better understand each attribute.
 Multivariate plots to better understand the relationships between attributes.
 
-### Univariate Plots
+#### Univariate Plots
 We start with some univariate plots, that is, plots of each individual variable.
 
 Given that the input variables are numeric, we can create box and whisker plots of each
 
 
-#### Box and whisker plots
+##### Box and whisker plots
 
 
 ![Box Plot](boxplot.png)
 
 
 
-#### histrogram
+##### histrogram
 A histogram of each input variable to get an idea of the distribution.
 
 ![histrogram](histrogram.png)
 
 
-### Multivariate Plots
+####  Multivariate Plots
 
-#### Scatterplots matrix
+##### Scatterplots matrix
 ![Scatter plot marix](scatter_matrix.png)
+
+
+
 
 
 ## Summary of  Investigations.
@@ -88,11 +92,18 @@ A histogram of each input variable to get an idea of the distribution.
 
 
 ### Evaluate  Algorithms
-To create some models of the data and estimate their accuracy on unseen data.
-Separate out a validation dataset.
-Set-up the test harness to use 10-fold cross validation.
-Build 5 different models to predict species from flower measurements
-Select the best model.
+
+
+Split dataset into random train and test subsets
+```python
+array = df.values
+X = array[:,0:4]
+Y = array[:,4]
+validation_size = 0.20
+seed = 7
+scoring = 'accuracy'
+X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed)
+```
 
 ### Make Predictions
 The KNN algorithm is very simple and was an accurate model based on the tests. Now we want to get an idea of the accuracy of the model on our validation set.
