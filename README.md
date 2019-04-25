@@ -81,6 +81,7 @@ Each horizontal line starting from bottom will show the minimum, lower quartile,
 ![Box Plot](boxplot.png)
 
 
+We can use a box plot to explore the distribution of a continues variable across the categories
 
 ##### histrogram
 A histogram of each input variable to get an idea of the distribution.
@@ -129,3 +130,4 @@ We can run the KNN model directly on the validation set and summarize the result
 5. Ritchie Ng,Evaluating a Classification Model <https://www.ritchieng.com/machine-learning-evaluate-classification-model/>
 6. geeksforgeeks,Python | Pandas Dataframe.describe() method ,<https://www.geeksforgeeks.org/python-pandas-dataframe-describe-method/>
 7. UCI Machine Learning Repository,Iris Data Set, <https://archive.ics.uci.edu/ml/datasets/Iris>
+8. datascience+,Use Box Plots to Assess the Distribution and to Identify the Outliers in Your Dataset,<https://datascienceplus.com/box-plots-identify-outliers/>
