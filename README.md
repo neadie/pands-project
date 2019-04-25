@@ -115,26 +115,6 @@ sns.pairplot(data=df,hue="class",palette="Set2")
 
 
 
-### Evaluate  Algorithms
-
-
-Split dataset into random train and test subsets
-```python
-array = df.values
-X = array[:,0:4]
-Y = array[:,4]
-validation_size = 0.20
-seed = 7
-scoring = 'accuracy'
-X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed)
-```
-
-### Make Predictions
-The KNN algorithm is very simple and was an accurate model based on the tests. Now we want to get an idea of the accuracy of the model on our validation set.
-
-This will give us an independent final check on the accuracy of the best model. It is valuable to keep a validation set just in case you made a slip during training, such as overfitting to the training set or a data leak. Both will result in an overly optimistic result.
-
-We can run the KNN model directly on the validation set and summarize the results as a final accuracy score, a confusion matrix and a classification report
 
 ## References 
 1. Scikit-Learn , The Iris Dataset,https,<https://scikit-learn.org/stable/auto_examples/datasets/plot_iris_dataset.html>
