@@ -15,6 +15,7 @@ There were 5 key libraries installed. Below is a list of the Python SciPy librar
 - matplotlib
 - pandas
 - sklearn 
+- seaborn
 
 
 
@@ -98,6 +99,13 @@ Light blue indicates Iris setosa, pink Iris versicolor, and purple Iris virginic
 
 - Iris virginica has a large sepal length and petal length.
 - Iris versicolor sits between setosa and virginica much of the time.
+```python
+sns.pairplot(data=df,hue="class",palette="Set2")
+```
+
+sns.pairplot(data=df,hue="Species",palette="Set2")
+
+
 ![Scatter plot marix](scatter_matrix.png)
 
 
