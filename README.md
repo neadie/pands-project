@@ -103,7 +103,7 @@ Light blue indicates Iris setosa, pink Iris versicolor, and purple Iris virginic
 sns.pairplot(data=df,hue="class",palette="Set2")
 ```
 
-sns.pairplot(data=df,hue="Species",palette="Set2")
+
 
 
 ![Scatter plot marix](scatter_matrix.png)
