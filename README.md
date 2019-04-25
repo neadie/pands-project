@@ -94,10 +94,10 @@ A histogram of each input variable to get an idea of the distribution.
 ##### Scatterplots matrix
 This dataset examines sepal length, sepal width, petal length, and petal width and then classifies the species.
 Light blue indicates Iris setosa, pink Iris versicolor, and purple Iris virginica.
--Iris setosa has a large sepal width but small petal width.
+- Iris setosa has a large sepal width but small petal width.
 
--Iris virginica has a large sepal length and petal length.
--Iris versicolor sits between setosa and virginica much of the time.
+- Iris virginica has a large sepal length and petal length.
+- Iris versicolor sits between setosa and virginica much of the time.
 ![Scatter plot marix](scatter_matrix.png)
 
 
