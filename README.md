@@ -76,7 +76,7 @@ Given that the input variables are numeric, we can create box and whisker plots 
 
 
 ##### Box and whisker plots
-Each horizontal line starting from bottom will show the minimum, lower quartile, median, upper quartile and maximum value 
+Each horizontal line starting from bottom will show the minimum, lower quartile, median, upper quartile and maximum value of Sepal length, Sepal Width, Petal length and Petal Width
 
 ![Box Plot](boxplot.png)
 
