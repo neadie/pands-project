@@ -76,7 +76,7 @@ Given that the input variables are numeric, we can create box and whisker plots 
 
 
 ##### Box and whisker plots
-
+Each horizontal line starting from bottom will show the minimum, lower quartile, median, upper quartile and maximum value 
 
 ![Box Plot](boxplot.png)
 
