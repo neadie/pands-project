@@ -122,3 +122,5 @@ sns.pairplot(data=df,hue="class",palette="Set2")
 3. geeksforgeeks,Python | Pandas Dataframe.describe() method ,<https://www.geeksforgeeks.org/python-pandas-dataframe-describe-method/>
 4. datascience+,Use Box Plots to Assess the Distribution and to Identify the Outliers in Your Dataset,<https://datascienceplus.com/box-plots-identify-outliers/>
 5. What is a SPLOM chart? Making scatterplot matrices in Python, <https://medium.com/@plotlygraphs/what-is-a-splom-chart-make-scatterplot-matrices-in-python-8dc4998921c3>
+6. Iris Dataset EDA and Classification Analysis,
+<https://www.kaggle.com/lnbalon/iris-dataset-eda-and-classification-analysis>
