@@ -48,7 +48,7 @@ The describe() is used to view some basic statistical details like percentile, m
 #### Class Distribution
 Let’s now take a look at the number of instances (rows) that belong to each class. We can view this as an absolute count.
 ```python
-print(df.describe())
+print(df.groupby('class').size())
 ```
 
 
