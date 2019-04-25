@@ -4,7 +4,7 @@
 ### Background information about the Iris Dataset
 The data set consists of 149 samples from each of three species of Iris (Iris setosa, Iris virginica and Iris versicolor). 
 
-The dataset contains five attributes - petal length, petal width, sepal length, sepal width and species.[7]
+The dataset contains five attributes - petal length, petal width, sepal length, sepal width and species. [https://archive.ics.uci.edu/ml/datasets/Iris][7]
 
 ## Preparation
 
