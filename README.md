@@ -47,12 +47,12 @@ The describe() is used to view some basic statistical details like percentile, m
 
 #### Class Distribution
 Let’s now take a look at the number of instances (rows) that belong to each class. We can view this as an absolute count.
-********
-Compute group sizes
-class
-Iris-setosa        49
-Iris-versicolor    50
-Iris-virginica     50
+
+| Class           |  size  |
+|-----------------|--------|
+| Iris-setosa     |    49  |
+| Iris-versicolor |    50  |
+| Iris-virginica  |     50 |
 dtype: int64
 
 ### Data Visualization
