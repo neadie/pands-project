@@ -38,7 +38,8 @@ class MahcineLeanringClass:
         return df
     
     def getBoxPlot(self,image):
-        self.loadDataSet().plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+        # self.loadDataSet().plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
+        self.loadDataSet().boxplot(by="class", figsize=(10, 10))
         plt.savefig(image) 
         plt.show()
         
