@@ -77,7 +77,7 @@ Given that the input variables are numeric, we can create box and whisker plots 
 
 
 ##### Box and whisker plots
-Each horizontal line starting from bottom will show the minimum, lower quartile, median, upper quartile and maximum value of Sepal length, Sepal Width, Petal length and Petal Width
+Each horizontal line starting from bottom will show the minimum, lower quartile, median, upper quartile and maximum value of Sepal length, Sepal Width, Petal length and Petal Width of each species Iris setosa, Iris virginica and Iris versicolor
 
 ![Box Plot](boxplot.png)
 
