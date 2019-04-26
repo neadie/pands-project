@@ -5,20 +5,8 @@ Created on Sat Apr  6 20:42:06 2019
 @author: SineadF
 """
 
-import matplotlib.pyplot as plt
-from sklearn import model_selection
-from sklearn.linear_model import LogisticRegression
-import seaborn as sns
+
 import exploratoryDataAnalysis as eda
-
-
-
-
-
-
-
-
-
 
 def main():
     iris = eda.exploratoryDataAnalysisClass()
@@ -48,6 +36,7 @@ def main():
     print(' *************************************************')
     print('Scatter Matrix ')
     iris.getScatterMatrix('scatter_matrix.png')
+    
    
         
 
