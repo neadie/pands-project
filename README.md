@@ -8,13 +8,12 @@ The dataset contains five attributes - petal length, petal width, sepal length, 
 
 ## Preparation
 
-There were 5 key libraries installed. Below is a list of the Python SciPy libraries required for this project:
+There were 5 key libraries installed. Below is a list of the Python  libraries required for this project:
 
-- scipy
+
 - numpy
 - matplotlib
 - pandas
-- sklearn 
 - seaborn
 
 
@@ -77,12 +76,12 @@ Given that the input variables are numeric, we can create box and whisker plots 
 
 
 ##### Box and whisker plots
-Each horizontal line starting from bottom will show the minimum, lower quartile, median, upper quartile and maximum value of Sepal length, Sepal Width, Petal length and Petal Width of each species Iris setosa, Iris virginica and Iris versicolor
+Each horizontal line starting from bottom will show the minimum, lower quartile, median, upper quartile and maximum value of Sepal length, Sepal Width, Petal length and Petal Width of each species Iris setosa, Iris virginica and Iris versicolor. distribution of a continues variable across the categories
 
 ![Box Plot](boxplot.png)
 
 
-We can use a box plot to explore the distribution of a continues variable across the categories
+
 
 ##### histrogram
 A histogram of each input variable to get an idea of the distribution.
