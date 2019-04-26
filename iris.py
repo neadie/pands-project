@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 from sklearn import model_selection
 from sklearn.linear_model import LogisticRegression
 import seaborn as sns
-import dataAnalyticsProjectMachineLearning as dap
+import exploratoryDataAnalysis as eda
 
 
 
@@ -21,7 +21,7 @@ import dataAnalyticsProjectMachineLearning as dap
 
 
 def main():
-    iris = dap.MahcineLeanringClass()
+    iris = eda.exploratoryDataAnalysisClass()
     iris.url='http://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data'
     iris.attributes = ["sepal_length", "sepal_width", "petal_length", "petal_width", "class"]
     df = iris.loadDataSet()
@@ -48,34 +48,7 @@ def main():
     print(' *************************************************')
     print('Scatter Matrix ')
     iris.getScatterMatrix('scatter_matrix.png')
-    print(' *************************************************')
-    print('Split-out validation dataset ')
-    array = df.values
-    X = array[:,0:4]
-    Y = array[:,4]
-    validation_size = 0.20
-    seed = 7
-    scoring = 'accuracy'
-    X_train, X_validation, Y_train, Y_validation = model_selection.train_test_split(X, Y, test_size=validation_size, random_state=seed)
-    print(' *************************************************')
-    print('Spot Check Algorithms ')
-    models,results,names=iris.checkAlgorithmModels(seed,X_train,Y_train,scoring)
-    print(' *************************************************')
-    print('Compare Algorithms ')
-    iris.compareAlgorithms(names,results)
-    print(' *************************************************')
-    print('Make predictions on validation dataset Fit the classifier to the data ')
-    iris.getknnClassifierPredictions(X_train, X_validation, Y_train, Y_validation)
-    # example of training a final classification model
-    # generate 2d classification dataset
-    # fit final model
-    model = LogisticRegression()
-    model.fit(X, Y)
-    ## Exploratory data analysis
-    ## I be working with the iris dataset. My goal was  
-    ## be to predict species('Iris-versicolor','Iris-virginica','Iris-setosa') based on "sepal_length", "sepal_width", "petal_length", "petal_width"
-    sns.pairplot(data=df,hue="class",palette="Set2") 
-    plt.show()
+   
         
 
 
