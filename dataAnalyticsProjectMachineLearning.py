@@ -48,7 +48,7 @@ class MahcineLeanringClass:
         plt.show()
         
     def getScatterMatrix(self,image):
-        scatter_matrix(self.loadDataSet())
+        sns.pairplot(data=self.loadDataSet(),hue="class",palette="Set2")
         plt.savefig(image) 
         plt.show()
       

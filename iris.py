@@ -74,22 +74,7 @@ def main():
     ## Exploratory data analysis
     ## I be working with the iris dataset. My goal was  
     ## be to predict species('Iris-versicolor','Iris-virginica','Iris-setosa') based on "sepal_length", "sepal_width", "petal_length", "petal_width"
-    plt.figure()
-    sns.countplot(x='sepal_length', hue='class', data=df, palette='RdBu')
-    plt.xticks([0,1,2], ['Iris-versicolor','Iris-virginica','Iris-setosa'])
-    plt.show()
-    plt.figure()
-    sns.countplot(x='sepal_width', hue='class', data=df, palette='RdBu')
-    plt.xticks([0,1,2], ['Iris-versicolor','Iris-virginica','Iris-setosa'])
-    plt.show()
-    plt.figure()
-    sns.countplot(x='petal_length', hue='class', data=df, palette='RdBu')
-    plt.xticks([0,1,2], ['Iris-versicolor','Iris-virginica','Iris-setosa'])
-    plt.show()
-    
-    plt.figure()
-    sns.countplot(x='petal_width', hue='class', data=df, palette='RdBu')
-    plt.xticks([0,1,2], ['Iris-versicolor','Iris-virginica','Iris-setosa'])
+    sns.pairplot(data=df,hue="class",palette="Set2") 
     plt.show()
         
 
