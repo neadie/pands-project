@@ -27,9 +27,9 @@ class exploratoryDataAnalysisClass:
         df.columns = self.attributes
         return df
     
-    def getBoxPlot(self,image):
+    def getBoxPlot(self,kind,image):
         # self.loadDataSet().plot(kind='box', subplots=True, layout=(2,2), sharex=False, sharey=False)
-        self.loadDataSet().boxplot(by="class", figsize=(10, 10))
+        self.loadDataSet().boxplot(by=kind, figsize=(10, 10))
         plt.savefig(image) 
         plt.show()
         
@@ -40,6 +40,19 @@ class exploratoryDataAnalysisClass:
         
     def getScatterMatrix(self,image):
         sns.pairplot(data=self.loadDataSet(),hue="class",palette="Set2")
+        plt.savefig(image) 
+        plt.show()
+        
+    def violinPlot(self,kind,var1,var2,var3,var4,image):
+        plt.figure(figsize=(15,10))
+        plt.subplot(2,2,1)
+        sns.violinplot(x='class',y='petal_length',data=self.loadDataSet())
+        plt.subplot(2,2,2)
+        sns.violinplot(x='class',y='petal_width',data=self.loadDataSet())
+        plt.subplot(2,2,3)
+        sns.violinplot(x='class',y='sepal_length',data=self.loadDataSet())
+        plt.subplot(2,2,4)
+        sns.violinplot(x='class',y='sepal_width',data=self.loadDataSet())
         plt.savefig(image) 
         plt.show()
       

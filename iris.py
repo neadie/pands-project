@@ -4,8 +4,6 @@ Created on Sat Apr  6 20:42:06 2019
 
 @author: SineadF
 """
-
-
 import exploratoryDataAnalysis as eda
 
 def main():
@@ -29,13 +27,17 @@ def main():
     print(df.groupby('class').size())
     print(' *************************************************')
     print('Box Plots')
-    iris.getBoxPlot('boxplot.png')
+    iris.getBoxPlot('class','boxplot.png')
     print(' *************************************************')
     print('Histograms')
     iris.getHistrogram('histrogram.png')
     print(' *************************************************')
     print('Scatter Matrix ')
     iris.getScatterMatrix('scatter_matrix.png')
+    print(' *************************************************')
+    print('violin Plot ')
+    iris.violinPlot('class','petal_length','petal_width','sepal_length','sepal_width','violin_matrix.png')
+    
     
    
         
