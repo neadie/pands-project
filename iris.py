@@ -36,7 +36,7 @@ def main():
     iris.getScatterMatrix('scatter_matrix.png')
     print(' *************************************************')
     print('violin Plot ')
-    iris.violinPlot('class','petal_length','petal_width','sepal_length','sepal_width','violin_matrix.png')
+    iris.violinPlot('class','petal_length','petal_width','sepal_length','sepal_width','violin_plot.png')
     
     
    
