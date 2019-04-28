@@ -69,13 +69,10 @@ We are going to look at two types of plots:
 Univariate plots to better understand each attribute.
 Multivariate plots to better understand the relationships between attributes.
 
-#### Univariate Plots
-We start with some univariate plots, that is, plots of each individual variable.
-
-Given that the input variables are numeric, we can create box and whisker plots of each
 
 
-##### Box and whisker plots
+
+#### Box and whisker plots
 Each horizontal line starting from bottom will show the minimum, lower quartile, median, upper quartile and maximum value of Sepal length, Sepal Width, Petal length and Petal Width of each species Iris setosa, Iris virginica and Iris versicolor. distribution of a continues variable across the categories
 
 ![Box Plot](boxplot.png)
@@ -83,15 +80,11 @@ Each horizontal line starting from bottom will show the minimum, lower quartile,
 
 
 
-##### histrogram
-A histogram of each input variable to get an idea of the distribution.
-
-![histrogram](histrogram.png)
 
 
-####  Multivariate Plots
 
-##### Scatterplots matrix
+
+#### Scatterplots matrix
 This dataset examines sepal length, sepal width, petal length, and petal width and then classifies the species.
 Light blue indicates Iris setosa, pink Iris versicolor, and purple Iris virginica.
 - Iris setosa has a large sepal width but small petal width.
@@ -107,9 +100,9 @@ sns.pairplot(data=df,hue="class",palette="Set2")
 
 ![Scatter plot marix](scatter_matrix.png)
 
+#### Violin PLot
 
-
-
+![Violin plot](violin_plot.png)
 
 
 
