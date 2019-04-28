@@ -69,13 +69,10 @@ We are going to look at two types of plots:
 Univariate plots to better understand each attribute.
 Multivariate plots to better understand the relationships between attributes.
 
-#### Univariate Plots
-We start with some univariate plots, that is, plots of each individual variable.
-
-Given that the input variables are numeric, we can create box and whisker plots of each
 
 
-##### Box and whisker plots
+
+#### Box and whisker plots
 Each horizontal line starting from bottom will show the minimum, lower quartile, median, upper quartile and maximum value of Sepal length, Sepal Width, Petal length and Petal Width of each species Iris setosa, Iris virginica and Iris versicolor. distribution of a continues variable across the categories
 
 ![Box Plot](boxplot.png)
@@ -83,15 +80,11 @@ Each horizontal line starting from bottom will show the minimum, lower quartile,
 
 
 
-##### histrogram
-A histogram of each input variable to get an idea of the distribution.
-
-![histrogram](histrogram.png)
 
 
-####  Multivariate Plots
 
-##### Scatterplots matrix
+
+#### Scatterplots matrix
 This dataset examines sepal length, sepal width, petal length, and petal width and then classifies the species.
 Light blue indicates Iris setosa, pink Iris versicolor, and purple Iris virginica.
 - Iris setosa has a large sepal width but small petal width.
@@ -107,9 +100,11 @@ sns.pairplot(data=df,hue="class",palette="Set2")
 
 ![Scatter plot marix](scatter_matrix.png)
 
+#### Violin PLot
 
+The above Violin Boxplot of Species shows that Iris Virginica has highest median value in petal length, petal width and sepal length when compared against Versicolor and Setosa. However, Iris Setosa has the highest sepal width median value. We can also see significant difference between Setosa’s sepal lenght and width against its petal length and width. That differene is smaller in Versicolor and Virginica. The violin plot also indicates that the weight of the Virginica sepal width and petal width are highly concentrated around the median
 
-
+![Violin plot](violin_plot.png)
 
 
 
@@ -123,3 +118,4 @@ sns.pairplot(data=df,hue="class",palette="Set2")
 5. What is a SPLOM chart? Making scatterplot matrices in Python, <https://medium.com/@plotlygraphs/what-is-a-splom-chart-make-scatterplot-matrices-in-python-8dc4998921c3>
 6. Iris Dataset EDA and Classification Analysis,
 <https://www.kaggle.com/lnbalon/iris-dataset-eda-and-classification-analysis>
+7. Famous Iris data set exploration, <http://rstudio-pubs-static.s3.amazonaws.com/321676_20be34434fe44ed2b229eadeabe0eb98.html>
