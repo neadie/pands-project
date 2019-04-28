@@ -5,6 +5,7 @@ Created on Sat Apr  6 20:42:06 2019
 @author: SineadF
 """
 import exploratoryDataAnalysis as eda
+import matplotlib.pyplot as plt
 
 def main():
     iris = eda.exploratoryDataAnalysisClass()
@@ -37,7 +38,10 @@ def main():
     print(' *************************************************')
     print('violin Plot ')
     iris.violinPlot('class','petal_length','petal_width','sepal_length','sepal_width','violin_plot.png')
-    
+    print(' *************************************************')
+    print('correlation matrix ')
+    iris.corrmatrix('corr_metrix.png')
+     
     
    
         

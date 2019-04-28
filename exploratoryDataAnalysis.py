@@ -55,6 +55,14 @@ class exploratoryDataAnalysisClass:
         sns.violinplot(x='class',y='sepal_width',data=self.loadDataSet())
         plt.savefig(image) 
         plt.show()
+        
+    def corrmatrix(self,image):
+        plt.matshow(self.loadDataSet().corr())
+        plt.xticks(range(len(self.loadDataSet().columns)), self.loadDataSet().columns)
+        plt.yticks(range(len(self.loadDataSet().columns)), self.loadDataSet().columns)
+        plt.colorbar()
+        plt.savefig(image)
+        plt.show() 
       
   
 
