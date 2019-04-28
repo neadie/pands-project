@@ -102,6 +102,8 @@ sns.pairplot(data=df,hue="class",palette="Set2")
 
 #### Violin PLot
 
+The above Violin Boxplot of Species shows that Iris Virginica has highest median value in petal length, petal width and sepal length when compared against Versicolor and Setosa. However, Iris Setosa has the highest sepal width median value. We can also see significant difference between Setosa’s sepal lenght and width against its petal length and width. That differene is smaller in Versicolor and Virginica. The violin plot also indicates that the weight of the Virginica sepal width and petal width are highly concentrated around the median
+
 ![Violin plot](violin_plot.png)
 
 
@@ -116,3 +118,4 @@ sns.pairplot(data=df,hue="class",palette="Set2")
 5. What is a SPLOM chart? Making scatterplot matrices in Python, <https://medium.com/@plotlygraphs/what-is-a-splom-chart-make-scatterplot-matrices-in-python-8dc4998921c3>
 6. Iris Dataset EDA and Classification Analysis,
 <https://www.kaggle.com/lnbalon/iris-dataset-eda-and-classification-analysis>
+7. Famous Iris data set exploration, <http://rstudio-pubs-static.s3.amazonaws.com/321676_20be34434fe44ed2b229eadeabe0eb98.html>
