@@ -39,9 +39,9 @@ def main():
     print('violin Plot ')
     iris.violinPlot('class','petal_length','petal_width','sepal_length','sepal_width','violin_plot.png')
     print(' *************************************************')
-    print('correlation matrix ')
-    iris.corrmatrix('corr_metrix.png')
-     
+    print('regression plots  ')
+    iris.regressionPlot('sepal_width','sepal_length','class','regression.png')
+    
     
    
         

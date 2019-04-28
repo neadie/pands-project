@@ -57,13 +57,14 @@ class exploratoryDataAnalysisClass:
         plt.show()
         
     def corrmatrix(self,image):
-        plt.matshow(self.loadDataSet().corr())
-        plt.xticks(range(len(self.loadDataSet().columns)), self.loadDataSet().columns)
-        plt.yticks(range(len(self.loadDataSet().columns)), self.loadDataSet().columns)
-        plt.colorbar()
+        sns.heatmap(self.loadDataSet().corr(),cmap="YlGnBu", linecolor='white', linewidths=1)
         plt.savefig(image)
         plt.show() 
       
-  
+        
+    def regressionPlot(self,var1,var2,kind,image):
+        sns.lmplot(x = 'sepal_width', y = 'sepal_length', data = self.loadDataSet(), col = 'class', hue = 'class', palette = 'YlGnBu')
+        plt.savefig(image) 
+        plt.show()
 
 
